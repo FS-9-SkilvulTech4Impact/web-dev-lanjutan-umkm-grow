@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Kelas</title>
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- <Header> -->
+    <header>
+      <nav>
+        <div class="logo-menu-container">
+          <a href="#">
+            <img src="../assets/images/Logo.svg" alt="Logo" class="logo-navbar"
+          /></a>
+          <div class="menu-desktop-navbar">
+            <ul>
+              <li class="menu-navbar">
+                <a href="#">Beranda</a>
+              </li>
+              <li class="menu-navbar">
+                <a href="#tentang">Tentang</a>
+              </li>
+              <li class="menu-navbar">
+                <a href="">Kelas</a>
+              </li>
+              <li class="menu-navbar">
+                <a href="#form-section">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-desktop-navbar">
+          <button class="btn btn-secondary">
+            <img src="../assets/images/LogoSkilvul.png" alt="" />
+          </button>
+        </div>
+        <img
+          id="menu-mobile-open"
+          src="../assets/icons/HamburgerMenu.svg"
+          alt="Menu"
+          class="icon-navbar"
+        />
+      </nav>
+      <div id="menu-mobile" class="menu-mobile-navbar">
+        <div class="icon-close-container">
+          <img
+            id="menu-mobile-close"
+            src="../assets/icons/Close.svg"
+            alt="Close"
+            class="icon-navbar"
+          />
+        </div>
+        <ul>
+          <li class="menu-option-navbar"><a href="#">Beranda</a></li>
+          <li class="menu-option-navbar"><a href="#tentang">Tentang</a></li>
+          <li class="menu-option-navbar"><a href="">Kelas</a></li>
+          <li class="menu-option-navbar"><a href="#form-section">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- </Header> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
