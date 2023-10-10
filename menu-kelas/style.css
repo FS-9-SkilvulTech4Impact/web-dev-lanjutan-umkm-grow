@@ -172,3 +172,58 @@ a {
     border-radius: 100%;
   }
 }
+
+.footer {
+  display: flex;
+  padding: 6px 7%;
+  justify-content: space-between;
+  background-color: #e5f2fa;
+  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #0000004b;
+}
+
+.column-1 p {
+  margin-bottom: 16px;
+}
+
+.sosmed a {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+.column-2 h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2e3646;
+}
+
+.column-2 a {
+  display: block;
+  margin-top: 8px;
+}
+
+.column-3 h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #2e3646;
+}
+
+.column-3 a {
+  display: block;
+  margin-top: 8px;
+}
+
+.footer-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 7%;
+  background-color: #e5f2fa;
+}
+
+.lainnya a {
+  margin: 0 16px;
+}
