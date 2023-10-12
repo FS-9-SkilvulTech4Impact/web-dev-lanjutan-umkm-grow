@@ -64,8 +64,8 @@ async function updateQuestion() {
 	let listQuestionArr = [];
 
 	data.questions.forEach((question, i) => {
-		listQuestionArr.push(`<div
-						class="text-slate-700 md:text-[20px] p-2 md:p-3 hover:bg-zinc-100 text-center rounded-md border border-slate-300 cursor-pointer ${
+		listQuestionArr.push(`<div data-num="${i + 1}"
+						class="box-num text-slate-700 md:text-[20px] p-2 md:p-3 hover:bg-zinc-100 text-center rounded-md border border-slate-300 cursor-pointer ${
 							currentAnswer.hasOwnProperty(i + 1) ? 'bg-[#5EEA6C]' : 'bg-white'
 						}">
 						${i + 1}
@@ -82,7 +82,7 @@ async function updateQuestion() {
 				questionAnswersArr.push(`<div data-num="${
 					i + 1
 				}" data-key="${key}" onclick="handleAnswerClick"
-									class="ans text-[12px] text-slate-700 md:text-[20px] rounded-lg w-11/12 p-2 md:p-3 border border-[#D9D9D9] cursor-pointer">
+									class="ans text-[12px] text-slate-700 md:text-[20px] rounded-lg w-11/12 md:w-full p-2 md:p-3 border border-[#D9D9D9] cursor-pointer">
 									${key}. ${questionAnswers[key]}
 								</div>`);
 			}
@@ -118,6 +118,15 @@ function initAnswerControl() {
 			a.style.backgroundColor = '#D9D9D9';
 		}
 	});
+
+	document.querySelectorAll('.box-num').forEach((box) => {
+		box.addEventListener('click', (e) => {
+			const numQuestionClick = box.getAttribute('data-num');
+			currentQuestion = `question-${numQuestionClick}`;
+
+			updateQuestion();
+		});
+	});
 }
 
 updateQuestion();
@@ -130,7 +139,6 @@ prevQuestion.addEventListener('click', () => {
 	numCurrQuestion = Number(currentQuestion.split('-')[1]);
 	currentQuestion = `question-${numCurrQuestion - 1}`;
 
-	console.log(currentQuestion);
 	updateQuestion();
 });
 
@@ -142,6 +150,5 @@ nextQuestion.addEventListener('click', () => {
 	numCurrQuestion = Number(currentQuestion.split('-')[1]);
 	currentQuestion = `question-${numCurrQuestion + 1}`;
 
-	console.log(currentQuestion);
 	updateQuestion();
 });
