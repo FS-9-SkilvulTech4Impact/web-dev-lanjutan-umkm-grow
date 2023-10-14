@@ -244,6 +244,9 @@ footer {
   .btn {
     padding: 10px 20px;
     font-size: 20px;
+  }
+
+  .btn-secondary {
     border-radius: 100%;
   }
 
