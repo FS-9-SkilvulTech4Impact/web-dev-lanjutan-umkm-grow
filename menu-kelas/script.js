@@ -35,6 +35,7 @@ async function getListKelas() {
               <h4 class="text-red-600 ml-auto">${item.ket}</h4>
             </div>
           </a>
+          <hr class="mt-4">
         </div>  
       `;
       menuKelas.innerHTML += listKelas;
