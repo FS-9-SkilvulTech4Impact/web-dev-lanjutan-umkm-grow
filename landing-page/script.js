@@ -70,7 +70,6 @@ profileDesktopNavbar.addEventListener('click', () => {
 
 function checkIsLoggedIn() {
 	const isLoggedIn = localStorage.getItem('isUserLoggedIn');
-	console.log(isLoggedIn);
 	if (isLoggedIn) {
 		btnNavbar.classList.add('hidden');
 		profileNavbar.classList.remove('hidden');

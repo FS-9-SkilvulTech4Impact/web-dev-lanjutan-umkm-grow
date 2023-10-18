@@ -144,11 +144,46 @@ prevQuestion.addEventListener('click', () => {
 
 nextQuestion.addEventListener('click', () => {
 	if (Number(currentQuestion.split('-')[1]) >= 10) {
-		return;
+		window.location.href = '../sertifikasi';
 	}
 
 	numCurrQuestion = Number(currentQuestion.split('-')[1]);
 	currentQuestion = `question-${numCurrQuestion + 1}`;
 
 	updateQuestion();
+});
+
+const profileNavbar = document.getElementById('profile-navbar');
+const btnNavbar = document.getElementById('btn-navbar');
+const btnDesktopNavbar = document.querySelector('.btn-desktop-navbar');
+const profileDesktopNavbar = document.querySelector('.profile-desktop-navbar');
+const profileOption = document.getElementById('profile-option');
+
+profileDesktopNavbar.addEventListener('click', () => {
+	profileOption.classList.toggle('hidden');
+});
+
+function checkIsLoggedIn() {
+	const isLoggedIn = localStorage.getItem('isUserLoggedIn');
+	if (isLoggedIn) {
+		btnNavbar.classList.add('hidden');
+		profileNavbar.classList.remove('hidden');
+		profileNavbar.classList.add('flex');
+		profileDesktopNavbar.classList.remove('hidden');
+		btnDesktopNavbar.classList.add('hidden');
+	} else {
+		profileNavbar.classList.remove('flex');
+		profileNavbar.classList.add('hidden');
+		btnNavbar.classList.remove('hidden');
+		btnDesktopNavbar.classList.remove('hidden');
+		profileDesktopNavbar.classList.add('hidden');
+	}
+}
+
+checkIsLoggedIn();
+
+const logout = document.getElementById('logout');
+logout.addEventListener('click', () => {
+	localStorage.removeItem('isUserLoggedIn');
+	window.location.href = '';
 });

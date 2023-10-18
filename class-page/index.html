@@ -51,6 +51,22 @@
 						Daftar
 					</button>
 				</div>
+				<div class="profile-desktop-navbar relative cursor-pointer hidden">
+					<img
+						src="../assets/images/Logo.svg"
+						alt="profile-picture"
+						class="border border-slate-100 rounded-2xl p-2 aspect-square" />
+					<div
+						id="profile-option"
+						class="absolute bg-slate-50 w-full p-2 space-y-2 rounded-lg hidden">
+						<p class="hover:text-[#008d91] cursor-pointer">Profile</p>
+						<p
+							id="logout"
+							class="hover:text-red-400 cursor-pointer">
+							Logout
+						</p>
+					</div>
+				</div>
 				<img
 					id="menu-mobile-open"
 					src="../assets/icons/HamburgerMenu.svg"
@@ -72,6 +88,32 @@
 					<li class="menu-option-navbar"><a href="#tentang">Tentang</a></li>
 					<li class="menu-option-navbar"><a href="">Kelas</a></li>
 					<li class="menu-option-navbar"><a href="#form-section">Kontak</a></li>
+					<li class="menu-option-navbar">
+						<div
+							id="profile-navbar"
+							class="hidden justify-between items-center">
+							<img
+								src="../assets/images/Logo.svg"
+								class="border border-slate-100 rounded-2xl aspect-square"
+								alt="profile" />
+							<div>
+								<button class="btn btn-secondary mr-2">Profile</button>
+								<button
+									id="logout"
+									class="btn btn-primary bg-red-400 border-red-400 text-black">
+									Logout
+								</button>
+							</div>
+						</div>
+						<div
+							id="btn-navbar"
+							class="">
+							<a href="../sign-in"
+								><button class="btn btn-secondary">Masuk</button></a
+							>
+							<button class="btn btn-primary ml-2">Daftar</button>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</header>
