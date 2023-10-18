@@ -206,6 +206,6 @@ checkIsLoggedIn();
 
 const logout = document.getElementById('logout');
 logout.addEventListener('click', () => {
-	localStorage.removeItem('isUserLoggedIn');
+	localStorage.clear();
 	window.location.href = '';
 });
