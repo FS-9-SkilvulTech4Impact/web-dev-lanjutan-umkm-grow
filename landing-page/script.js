@@ -57,3 +57,39 @@ function submit() {
 }
 
 document.getElementById('form').addEventListener('submit', () => submit());
+
+const profileNavbar = document.getElementById('profile-navbar');
+const btnNavbar = document.getElementById('btn-navbar');
+const btnDesktopNavbar = document.querySelector('.btn-desktop-navbar');
+const profileDesktopNavbar = document.querySelector('.profile-desktop-navbar');
+const profileOption = document.getElementById('profile-option');
+
+profileDesktopNavbar.addEventListener('click', () => {
+	profileOption.classList.toggle('hidden');
+});
+
+function checkIsLoggedIn() {
+	const isLoggedIn = localStorage.getItem('isUserLoggedIn');
+	console.log(isLoggedIn);
+	if (isLoggedIn) {
+		btnNavbar.classList.add('hidden');
+		profileNavbar.classList.remove('hidden');
+		profileNavbar.classList.add('flex');
+		profileDesktopNavbar.classList.remove('hidden');
+		btnDesktopNavbar.classList.add('hidden');
+	} else {
+		profileNavbar.classList.remove('flex');
+		profileNavbar.classList.add('hidden');
+		btnNavbar.classList.remove('hidden');
+		btnDesktopNavbar.classList.remove('hidden');
+		profileDesktopNavbar.classList.add('hidden');
+	}
+}
+
+checkIsLoggedIn();
+
+const logout = document.getElementById('logout');
+logout.addEventListener('click', () => {
+	localStorage.removeItem('isUserLoggedIn');
+	window.location.href = '';
+});

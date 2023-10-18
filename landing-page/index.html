@@ -42,12 +42,30 @@
 					</div>
 				</div>
 				<div class="btn-desktop-navbar">
-					<button class="btn btn-secondary">Masuk</button>
+					<a href="../sign-in"
+						><button class="btn btn-secondary">Masuk</button></a
+					>
 					<button
 						class="btn btn-primary"
 						style="margin-left: 20px">
 						Daftar
 					</button>
+				</div>
+				<div class="profile-desktop-navbar relative cursor-pointer hidden">
+					<img
+						src="../assets/images/Logo.svg"
+						alt="profile-picture"
+						class="border border-slate-100 rounded-2xl p-2 aspect-square" />
+					<div
+						id="profile-option"
+						class="absolute bg-slate-50 w-full p-2 space-y-2 rounded-lg hidden">
+						<p class="hover:text-[#008d91] cursor-pointer">Profile</p>
+						<p
+							id="logout"
+							class="hover:text-red-400 cursor-pointer">
+							Logout
+						</p>
+					</div>
 				</div>
 				<img
 					id="menu-mobile-open"
@@ -71,21 +89,28 @@
 					<li class="menu-option-navbar"><a href="../menu-kelas">Kelas</a></li>
 					<li class="menu-option-navbar"><a href="#form-section">Kontak</a></li>
 					<li class="menu-option-navbar">
-						<div class="hidden justify-between items-center">
+						<div
+							id="profile-navbar"
+							class="hidden justify-between items-center">
 							<img
 								src="../assets/images/Logo.svg"
-								class="border border-black rounded-full aspect-square"
+								class="border border-slate-100 rounded-2xl aspect-square"
 								alt="profile" />
 							<div>
 								<button class="btn btn-secondary mr-2">Profile</button>
 								<button
+									id="logout"
 									class="btn btn-primary bg-red-400 border-red-400 text-black">
 									Logout
 								</button>
 							</div>
 						</div>
-						<div class="">
-							<button class="btn btn-secondary">Masuk</button>
+						<div
+							id="btn-navbar"
+							class="">
+							<a href="../sign-in"
+								><button class="btn btn-secondary">Masuk</button></a
+							>
 							<button class="btn btn-primary ml-2">Daftar</button>
 						</div>
 					</li>
@@ -214,6 +239,7 @@
 								>Nama</label
 							>
 							<input
+								class="p-2"
 								type="text"
 								name="name"
 								id="name"
@@ -226,6 +252,7 @@
 								>Kota</label
 							>
 							<input
+								class="p-2"
 								type="text"
 								name="city"
 								id="city" />
@@ -237,6 +264,7 @@
 								>Email</label
 							>
 							<input
+								class="p-2"
 								type="email"
 								name="email"
 								id="email"
@@ -249,6 +277,7 @@
 								>Zip Code</label
 							>
 							<input
+								class="p-2"
 								type="number"
 								name="zipCode"
 								id="zip-code"
@@ -272,7 +301,7 @@
 								<button
 									type="submit"
 									id="submit-form"
-									class="btn btn-primary">
+									class="btn btn-primary bg-[#008d91]">
 									Submit
 								</button>
 							</div>
@@ -308,26 +337,28 @@
 					<div>
 						<p class="text-footer">growumkmfs9@gmail.com</p>
 						<p class="text-footer">02198765432</p>
-						<img
-							src="../assets/icons/Tiktok.svg"
-							alt="Tiktok"
-							class="icon-footer" />
-						<img
-							src="../assets/icons/Instagram.svg"
-							alt="Instagram.svg"
-							class="icon-footer" />
-						<img
-							src="../assets/icons/Twitter.svg"
-							alt="Twitter.svg"
-							class="icon-footer" />
-						<img
-							src="../assets/icons/Linkedin.svg"
-							alt="Linkedin.svg"
-							class="icon-footer" />
-						<img
-							src="../assets/icons/Facebook.svg"
-							alt="Facebook.svg"
-							class="icon-footer" />
+						<div class="flex justify-center">
+							<img
+								src="../assets/icons/Tiktok.svg"
+								alt="Tiktok"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Instagram.svg"
+								alt="Instagram.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Twitter.svg"
+								alt="Twitter.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Linkedin.svg"
+								alt="Linkedin.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Facebook.svg"
+								alt="Facebook.svg"
+								class="icon-footer" />
+						</div>
 					</div>
 				</div>
 				<div class="features">
