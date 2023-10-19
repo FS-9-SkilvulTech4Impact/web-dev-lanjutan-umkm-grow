@@ -23,21 +23,21 @@ masuk.addEventListener('click', function () {
 	}
 });
 
-var mockupApiUrl = 'https://652e23d4f9afa8ef4b281524.mockapi.io';
+// var mockupApiUrl = 'https://652e23d4f9afa8ef4b281524.mockapi.io';
 
-function getMockData(endpoint) {
-	$.ajax({
-		url: mockupApiUrl + endpoint,
-		type: 'GET',
-		dataType: 'json',
-		success: function (data) {
-			console.log(data);
-		},
-		error: function (error) {
-			console.error(error);
-		},
-	});
-}
+// function getMockData(endpoint) {
+// 	$.ajax({
+// 		url: mockupApiUrl + endpoint,
+// 		type: 'GET',
+// 		dataType: 'json',
+// 		success: function (data) {
+// 			console.log(data);
+// 		},
+// 		error: function (error) {
+// 			console.error(error);
+// 		},
+// 	});
+// }
 
 getMockData('/users');
 
