@@ -52,10 +52,10 @@ const btnBack = document.getElementById('btn-back');
 const btnBuy = document.getElementById('btn-buy');
 
 btnBack.addEventListener('click', () => {
-	window.location.href = '../detail-kelas';
+	window.location.href = '/detail-kelas';
 });
 
 btnBuy.addEventListener('click', () => {
 	localStorage.setItem('isBoughtCourse', true);
-	window.location.href = '../detail-kelas';
+	window.location.href = '/detail-kelas';
 });
