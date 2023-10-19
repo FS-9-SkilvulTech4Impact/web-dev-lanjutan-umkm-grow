@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html
+	lang="en"
+	class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Grow Your Market - Fundamental Digital Marketing</title>
+
+		<!-- Style -->
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<!-- <Header> -->
+		<header>
+			<nav>
+				<div class="logo-menu-container">
+					<a href="#">
+						<img
+							src="../assets/images/Logo.svg"
+							alt="Logo"
+							class="logo-navbar"
+					/></a>
+					<div class="menu-desktop-navbar">
+						<ul>
+							<li class="menu-navbar">
+								<a href="/">Beranda</a>
+							</li>
+							<li class="menu-navbar">
+								<a href="/#tentang">Tentang</a>
+							</li>
+							<li class="menu-navbar">
+								<a href="/menu-kelas">Kelas</a>
+							</li>
+							<li class="menu-navbar">
+								<a href="/#form-section">Kontak</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn-desktop-navbar">
+					<button class="btn btn-secondary">Masuk</button>
+					<button
+						class="btn btn-primary"
+						style="margin-left: 20px">
+						Daftar
+					</button>
+				</div>
+				<div class="profile-desktop-navbar relative cursor-pointer hidden">
+					<img
+						src="../assets/images/Logo.svg"
+						alt="profile-picture"
+						class="hidden md:block border border-slate-100 rounded-2xl p-2 aspect-square" />
+					<div
+						id="profile-option"
+						class="absolute bg-slate-50 w-full p-2 space-y-2 rounded-lg hidden">
+						<p class="hover:text-[#008d91] cursor-pointer">Profile</p>
+						<p
+							id="logout"
+							class="hover:text-red-400 cursor-pointer">
+							Logout
+						</p>
+					</div>
+				</div>
+				<img
+					id="menu-mobile-open"
+					src="../assets/icons/HamburgerMenu.svg"
+					alt="Menu"
+					class="icon-navbar" />
+			</nav>
+			<div
+				id="menu-mobile"
+				class="menu-mobile-navbar">
+				<div class="icon-close-container">
+					<img
+						id="menu-mobile-close"
+						src="../assets/icons/Close.svg"
+						alt="Close"
+						class="icon-navbar" />
+				</div>
+				<ul>
+					<li class="menu-option-navbar"><a href="/">Beranda</a></li>
+					<li class="menu-option-navbar"><a href="/#tentang">Tentang</a></li>
+					<li class="menu-option-navbar"><a href="/detail-kelas">Kelas</a></li>
+					<li class="menu-option-navbar">
+						<a href="/#form-section">Kontak</a>
+					</li>
+					<li class="menu-option-navbar">
+						<div
+							id="profile-navbar"
+							class="hidden justify-between items-center">
+							<img
+								src="../assets/images/Logo.svg"
+								class="border border-slate-100 rounded-2xl aspect-square"
+								alt="profile" />
+							<div>
+								<button class="btn btn-secondary mr-2">Profile</button>
+								<button
+									id="logout"
+									class="btn btn-primary bg-red-400 border-red-400 text-black">
+									Logout
+								</button>
+							</div>
+						</div>
+						<div
+							id="btn-navbar"
+							class="">
+							<a href="../sign-in"
+								><button class="btn btn-secondary">Masuk</button></a
+							>
+							<button class="btn btn-primary ml-2">Daftar</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!-- </Header> -->
+
+		<!-- <Main> -->
+		<main
+			class="mx-[6px] my-[100px] md:my-[125px] px-2 md:mx-[145px] space-y-8">
+			<h1 class="font-bold text-[24px] md:text-[32px] text-[#2E3646]">
+				Charles Reynolds
+			</h1>
+			<p class="mt-2 text-[12px] md:text-[18px] text-slate-700">
+				charlesreynolds@gmail.com
+			</p>
+			<div>
+				<div class="flex justify-between items-center">
+					<div>
+						<p class="font-medium text-[12px] md:text-[20px] text-[#2E3646]">
+							Fundamental Pemasaran Digital
+						</p>
+						<p class="text-[8px] md:text-[16px] font-light text-[#2E3646]">
+							Part of
+							<span class="bg-[#008d91] text-white px-1 rounded"
+								>Grow Digital</span
+							>
+							<span class="bg-[#008d91] text-white px-1 rounded"
+								>Grow Your Market</span
+							>
+						</p>
+					</div>
+					<p class="font-medium text-[12px] md:text-[20px] text-[#FF0000]">
+						Gratis
+					</p>
+				</div>
+				<div class="mt-4 flex justify-between">
+					<p class="font-medium text-[12px] md:text-[20px] text-slate-700">
+						Total
+					</p>
+					<p class="font-medium text-[12px] md:text-[20px] text-[#2E3646]">
+						Gratis
+					</p>
+				</div>
+			</div>
+			<div class="mt-4 space-y-1">
+				<input
+					type="text"
+					name="voucher"
+					id="voucher"
+					placeholder="Masukkan Kode Vourcher"
+					class="py-1 md:py-2 px-2 md:px-4 w-full bg-slate-200 font-medium text-[10px] md:text-[18px] text-slate-700 rounded" />
+				<p class="font-light text-[8px] md:text-[16px] text-slate-700">
+					Dengan membeli kelas ini maka sudah menyetujui Ketentuan & Peraturan
+					dari UMKM Grow
+				</p>
+			</div>
+			<div class="flex justify-between">
+				<button
+					id="btn-back"
+					class="btn btn-secondary">
+					Kembali
+				</button>
+				<button
+					id="btn-buy"
+					class="btn btn-primary">
+					Beli Kelas
+				</button>
+			</div>
+		</main>
+		<!-- </Main> -->
+
+		<!-- <Footer> -->
+		<footer id="footer">
+			<div class="img-footer">
+				<img
+					src="../assets/images/Logo.svg"
+					alt="Logo"
+					class="logo-umkmgrow" />
+				<a
+					id="link"
+					href="https://skilvul.com">
+					<img
+						src="../assets/images/LogoSkilvul.png"
+						alt="LogoSkilvul"
+						class="logo-skilvul"
+				/></a>
+			</div>
+			<p class="text-footer">Berkembang Bersama UMKM Grow</p>
+			<div class="kontak-features-container">
+				<div class="kontak">
+					<p class="text-kontak-features">Kontak</p>
+					<div>
+						<p class="text-footer">growumkmfs9@gmail.com</p>
+						<p class="text-footer">02198765432</p>
+						<div class="flex space-x-2 mt-1 md:justify-center">
+							<img
+								src="../assets/icons/Tiktok.svg"
+								alt="Tiktok"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Instagram.svg"
+								alt="Instagram.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Twitter.svg"
+								alt="Twitter.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Linkedin.svg"
+								alt="Linkedin.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Facebook.svg"
+								alt="Facebook.svg"
+								class="icon-footer" />
+						</div>
+					</div>
+				</div>
+				<div class="features">
+					<p class="text-kontak-features">Features</p>
+					<ul>
+						<a href="#"><li class="text-footer">Beranda</li></a>
+						<a href="#tentang"><li class="text-footer">Tentang</li></a>
+						<a href=""><li class="text-footer">Kelas</li></a>
+						<a href="#form-section"><li class="text-footer">Kontak</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="terms-cons-copyright-container">
+				<div class="terms-cons-container">
+					<a href=""> <p class="text-footer">Syarat & Ketentuan</p></a>
+					<a href=""> <p class="text-footer">Kebijakan Privasi</p></a>
+				</div>
+				<p
+					class="text-footer"
+					style="margin-top: 5px; text-align: center">
+					Copyright &copy;2023 UMKM Grow. All rights reserved.
+				</p>
+			</div>
+		</footer>
+		<!-- </Footer> -->
+
+		<script src="script.js"></script>
+	</body>
+</html>

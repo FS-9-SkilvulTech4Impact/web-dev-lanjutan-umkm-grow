@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html
+	lang="en"
+	class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Grow Your Market - Fundamental Digital Marketing</title>
+
+		<!-- Style -->
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<!-- <Header> -->
+		<header>
+			<nav>
+				<div class="logo-menu-container">
+					<a href="#">
+						<img
+							src="../assets/images/Logo.svg"
+							alt="Logo"
+							class="logo-navbar"
+					/></a>
+					<div class="menu-desktop-navbar">
+						<ul>
+							<li class="menu-navbar">
+								<a href="#">Beranda</a>
+							</li>
+							<li class="menu-navbar">
+								<a href="#tentang">Tentang</a>
+							</li>
+							<li class="menu-navbar">
+								<a href="">Kelas</a>
+							</li>
+							<li class="menu-navbar">
+								<a href="#form-section">Kontak</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="btn-desktop-navbar">
+					<button class="btn btn-secondary">Masuk</button>
+					<button
+						class="btn btn-primary"
+						style="margin-left: 20px">
+						Daftar
+					</button>
+				</div>
+				<div class="profile-desktop-navbar relative cursor-pointer hidden">
+					<img
+						src="../assets/images/Logo.svg"
+						alt="profile-picture"
+						class="hidden md:block border border-slate-100 rounded-2xl p-2 aspect-square" />
+					<div
+						id="profile-option"
+						class="absolute bg-slate-50 w-full p-2 space-y-2 rounded-lg hidden">
+						<p class="hover:text-[#008d91] cursor-pointer">Profile</p>
+						<p
+							id="logout"
+							class="hover:text-red-400 cursor-pointer">
+							Logout
+						</p>
+					</div>
+				</div>
+				<img
+					id="menu-mobile-open"
+					src="../assets/icons/HamburgerMenu.svg"
+					alt="Menu"
+					class="icon-navbar" />
+			</nav>
+			<div
+				id="menu-mobile"
+				class="menu-mobile-navbar">
+				<div class="icon-close-container">
+					<img
+						id="menu-mobile-close"
+						src="../assets/icons/Close.svg"
+						alt="Close"
+						class="icon-navbar" />
+				</div>
+				<ul>
+					<li class="menu-option-navbar"><a href="#">Beranda</a></li>
+					<li class="menu-option-navbar"><a href="#tentang">Tentang</a></li>
+					<li class="menu-option-navbar"><a href="">Kelas</a></li>
+					<li class="menu-option-navbar"><a href="#form-section">Kontak</a></li>
+					<li class="menu-option-navbar">
+						<div
+							id="profile-navbar"
+							class="hidden justify-between items-center">
+							<img
+								src="../assets/images/Logo.svg"
+								class="border border-slate-100 rounded-2xl aspect-square"
+								alt="profile" />
+							<div>
+								<button class="btn btn-secondary mr-2">Profile</button>
+								<button
+									id="logout"
+									class="btn btn-primary bg-red-400 border-red-400 text-black">
+									Logout
+								</button>
+							</div>
+						</div>
+						<div
+							id="btn-navbar"
+							class="">
+							<a href="../sign-in"
+								><button class="btn btn-secondary">Masuk</button></a
+							>
+							<button class="btn btn-primary ml-2">Daftar</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!-- </Header> -->
+
+		<!-- <Main> -->
+		<main class="mx-[6px] my-[100px] md:my-[125px] px-2 md:mx-[145px]">
+			<!-- <Title> -->
+			<div class="md:my-[36px]">
+				<h1
+					class="font-bold text-2xl text-[#2E3646] md:font-bold md:text-[32px]">
+					Ujian Kelas <span id="exam-name"></span>
+				</h1>
+				<p
+					class="text-xs text-slate-700 mt-[8px] md:mt-[32px] md:text-[20px] leading-6">
+					Pastikan anda mengisi seluruh soal agar mendapatkan nilai yang
+					maksimal
+				</p>
+			</div>
+			<!-- </Title> -->
+
+			<div class="md:flex md:space-x-[36px]">
+				<div class="md:basis-3/4">
+					<!-- <Question> -->
+					<div
+						class="mt-[34px] rounded-md border border-zinc-700 p-4 md:p-8 flex space-x-2 md:space-x-4">
+						<div class="text-[12px] text-slate-700 md:text-[20px]">
+							<span id="num-question"></span>.
+						</div>
+						<div>
+							<p
+								id="question"
+								class="text-[12px] text-slate-700 md:text-[20px]"></p>
+							<div
+								id="answers"
+								class="flex flex-col space-y-2 md:space-y-4 mt-3 md:mt-5"></div>
+						</div>
+					</div>
+					<!-- </Question> -->
+
+					<!-- <Btn> -->
+					<div class="my-[34px] md:my-[46px] flex justify-between">
+						<button
+							id="prev-question"
+							class="btn btn-secondary">
+							Soal Sebelumnya
+						</button>
+						<button
+							id="next-question"
+							class="btn btn-primary">
+							Soal Selanjutnya
+						</button>
+					</div>
+					<!-- </Btn> -->
+				</div>
+				<!-- <ListQuestion> -->
+				<div
+					id="list-question"
+					class="my-[34px] rounded-[10px] border border-zinc-700 md:h-fit md:basis-1/4 grid grid-cols-5 gap-8 p-5 md:p-8"></div>
+				<!-- </ListQuestion> -->
+			</div>
+		</main>
+		<!-- </Main> -->
+
+		<!-- <Footer> -->
+		<footer id="footer">
+			<div class="img-footer">
+				<img
+					src="../assets/images/Logo.svg"
+					alt="Logo"
+					class="logo-umkmgrow" />
+				<a
+					id="link"
+					href="https://skilvul.com">
+					<img
+						src="../assets/images/LogoSkilvul.png"
+						alt="LogoSkilvul"
+						class="logo-skilvul"
+				/></a>
+			</div>
+			<p class="text-footer">Berkembang Bersama UMKM Grow</p>
+			<div class="kontak-features-container">
+				<div class="kontak">
+					<p class="text-kontak-features">Kontak</p>
+					<div>
+						<p class="text-footer">growumkmfs9@gmail.com</p>
+						<p class="text-footer">02198765432</p>
+						<div class="flex space-x-2 mt-1 md:justify-center">
+							<img
+								src="../assets/icons/Tiktok.svg"
+								alt="Tiktok"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Instagram.svg"
+								alt="Instagram.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Twitter.svg"
+								alt="Twitter.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Linkedin.svg"
+								alt="Linkedin.svg"
+								class="icon-footer" />
+							<img
+								src="../assets/icons/Facebook.svg"
+								alt="Facebook.svg"
+								class="icon-footer" />
+						</div>
+					</div>
+				</div>
+				<div class="features">
+					<p class="text-kontak-features">Features</p>
+					<ul>
+						<a href="#"><li class="text-footer">Beranda</li></a>
+						<a href="#tentang"><li class="text-footer">Tentang</li></a>
+						<a href=""><li class="text-footer">Kelas</li></a>
+						<a href="#form-section"><li class="text-footer">Kontak</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="terms-cons-copyright-container">
+				<div class="terms-cons-container">
+					<a href=""> <p class="text-footer">Syarat & Ketentuan</p></a>
+					<a href=""> <p class="text-footer">Kebijakan Privasi</p></a>
+				</div>
+				<p
+					class="text-footer"
+					style="margin-top: 5px; text-align: center">
+					Copyright &copy;2023 UMKM Grow. All rights reserved.
+				</p>
+			</div>
+		</footer>
+		<!-- </Footer> -->
+
+		<script src="script.js"></script>
+	</body>
+</html>
