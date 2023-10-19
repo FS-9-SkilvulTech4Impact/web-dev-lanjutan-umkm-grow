@@ -25,13 +25,13 @@
                 <a href="../landing-page/index.html">Beranda</a>
               </li>
               <li class="menu-navbar">
-                <a href="#tentang">Tentang</a>
+                <a href="../landing-page/index.html">Tentang</a>
               </li>
               <li class="menu-navbar">
                 <a href="">Kelas</a>
               </li>
               <li class="menu-navbar">
-                <a href="#form-section">Kontak</a>
+                <a href="../landing-page/index.html">Kontak</a>
               </li>
             </ul>
           </div>
@@ -58,8 +58,8 @@
           />
         </div>
         <ul>
-          <li class="menu-option-navbar"><a href="#">Beranda</a></li>
-          <li class="menu-option-navbar"><a href="#tentang">Tentang</a></li>
+          <li class="menu-option-navbar"><a href="../landing-page/index.html">Beranda</a></li>
+          <li class="menu-option-navbar"><a href="../landing-page/index.html">Tentang</a></li>
           <li class="menu-option-navbar"><a href="">Kelas</a></li>
           <li class="menu-option-navbar"><a href="#form-section">Kontak</a></li>
         </ul>
@@ -70,12 +70,12 @@
     <!-- Main -->
     <main>
       <!-- Hero-Section -->
-      <section id="hero" class="mt-[84px] mb-8 bg-[#E5F2FA] min-h-[500px]">
+      <section id="hero" class="md:mt-[84px] mb-8 bg-[#E5F2FA] min-h-[500px]">
         <div class="text-center p-32">
-          <h1 class="text-[36px] font-bold mb-2">
+          <h1 class="md:text-[36px] font-bold mb-2 sm:text-[18px]">
             Berkembang Bersama UMKM Grow
           </h1>
-          <p class="text-[16px] mb-4">
+          <p class="md:text-[16px] mb-4 sm:text-[8px]">
             Pilih kelas yang Anda minati dan peroleh sertifikat sebagai <br />
             bukti prestasi Anda dalam bidang tersebut.
           </p>
@@ -91,26 +91,28 @@
       <!-- Menu-Kelas -->
       <div id="menu-kelas">
         <div class="text-center mb-2">
-          <input
-            type="text"
-            placeholder="Cari kelas"
-            class="w-[917px] border-2 border-[#008D91] p-[5px] rounded-md"
-          />
-          <button
-            class="bg-[#008D91] hover:bg-[#206769] px-8 py-2 rounded-[10px] text-[#fff]"
-          >
-            Search
-          </button>
+          <form>
+            <input
+              type="text"
+              placeholder="Cari kelas" id="search-input"
+              class="md:w-[933px] border-2 border-[#008D91] p-[5px] rounded-md sm:w-[500px]"
+            />
+            <button
+              id="search-kelas" class="bg-[#008D91] hover:bg-[#206769] px-8 py-2 rounded-[10px] text-[#fff]"
+            >
+              Search
+            </button>
+          </form>
         </div>
-        <div class="px-[154px] flex justify-between mb-8">
-          <div>
+        <div class="md:px-[154px] flex md:justify-between mb-8">
+          <div class="sm:flex-col">
             <button
               class="border-2 border-[#008D91] px-2 rounded-md text-[#008D91] hover:bg-[#206769] hover:text-white"
             >
               Grow Digital
             </button>
             <button
-              class="border-2 border-[#008D91] px-2 rounded-md text-[#008D91] hover:bg-[#206769] hover:text-white""
+              class="border-2 border-[#008D91] px-2 rounded-md text-[#008D91] hover:bg-[#206769] hover:text-white"
             >
               Grow Your Market
             </button>
@@ -122,7 +124,7 @@
           </div>
           <div>
             <button
-              class="border-2 border-red-600 px-2 rounded-md text-red-600 hover:bg-red-600 hover:text-white"
+              class="border-2 border-red-600 px-2 rounded-md text-red-600 hover:bg-red-600 hover:text-white sm:flex-row"
             >
               Hapus Filter
             </button>
