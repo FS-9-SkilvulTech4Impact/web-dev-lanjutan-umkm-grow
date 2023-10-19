@@ -4,7 +4,8 @@ var masuk = document.getElementById('masuk');
 var lupa = document.getElementById('lupa');
 var daftar = document.getElementById('daftar');
 
-masuk.addEventListener('click', function () {
+masuk.addEventListener('click', function (e) {
+	e.preventDefault();
 	if (email.value == '' || password.value == '') {
 		alert('Email atau password tidak boleh kosong!');
 	} else {
