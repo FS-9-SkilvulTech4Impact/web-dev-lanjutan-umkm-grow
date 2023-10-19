@@ -38,7 +38,7 @@ function renderList(kelas) {
 	kelas.map((item, index) => {
 		let listKelas = `
       <div class="md:mx-[154px] mb-8 hover:bg-slate-100 cursor-pointer sm:mx-[70px]"
-        <a href="/detail-kelas">
+        <a href="../detail-kelas">
           <div class="flex gap-5">
             <img src="${item.image}" alt="" class="w-52 rounded-md">
               <div>
