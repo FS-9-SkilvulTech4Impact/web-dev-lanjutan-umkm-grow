@@ -37,9 +37,9 @@ function renderList(kelas) {
 	menuKelas.innerHTML = '';
 	kelas.map((item, index) => {
 		let listKelas = `
-      <div class="md:mx-[154px] mb-8 hover:bg-slate-100 cursor-pointer sm:mx-[70px]">
+      <div class="md:mx-[154px] mb-8 sm:mx-[70px]">
         <a href="../detail-kelas">
-          <div class="flex gap-5">
+          <div class="flex gap-5 hover:bg-slate-100 cursor-pointer">
             <img src="${item.image}" alt="" class="w-52 rounded-md">
               <div>
                 <h4 class="font-semibold">${item.name}</h4>
@@ -49,7 +49,7 @@ function renderList(kelas) {
             <h4 class="text-red-600 ml-auto">${item.ket}</h4>
           </div>
         </a>
-        <hr class="mt-4">
+        <hr class="my-4">
       </div>
           `;
 		menuKelas.innerHTML += listKelas;
