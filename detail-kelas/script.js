@@ -17,19 +17,19 @@ function checkIsBoughtThisCourse() {
 
 	if (isBought) {
 		btnContainer.innerHTML = '';
-		btnContainer.innerHTML = `<a href="/class-page"
+		btnContainer.innerHTML = `<a href="../class-page"
                 class="bg-[#008D91] hover:bg-[#206769] px-4 py-2 rounded-[10px] text-[#fff]"
               >
                 Buka Materi
               </a>
-              <a href="/sertifikasi"
+              <a href="../sertifikasi"
                 class="bg-transparent border border-[#008D91] hover:bg-[#206769] px-4 py-2 rounded-[10px] text-[#008D91] hover:text-white"
               >
                 Lihat Sertifikat
               </a>`;
 	} else {
 		btnContainer.innerHTML = '';
-		btnContainer.innerHTML = `<a href="/checkout-page"
+		btnContainer.innerHTML = `<a href="../checkout-page"
                 class="bg-[#008D91] hover:bg-[#206769] px-4 py-2 rounded-[10px] text-[#fff]"
               >
                 Pilih Kelas Ini
