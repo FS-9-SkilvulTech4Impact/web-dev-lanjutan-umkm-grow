@@ -29,7 +29,7 @@
 					<div class="menu-desktop-navbar">
 						<ul>
 							<li class="menu-navbar">
-								<a href="/#">Beranda</a>
+								<a href="/">Beranda</a>
 							</li>
 							<li class="menu-navbar">
 								<a href="/#tentang">Tentang</a>
@@ -86,7 +86,7 @@
 				<ul>
 					<li class="menu-option-navbar"><a href="/">Beranda</a></li>
 					<li class="menu-option-navbar"><a href="/#tentang">Tentang</a></li>
-					<li class="menu-option-navbar"><a href="/menu-kelas">Kelas</a></li>
+					<li class="menu-option-navbar"><a href="/detail-kelas">Kelas</a></li>
 					<li class="menu-option-navbar">
 						<a href="/#form-section">Kontak</a>
 					</li>
@@ -122,48 +122,66 @@
 		<!-- </Header> -->
 
 		<!-- <Main> -->
-		<main class="mx-[6px] my-[100px] md:my-[125px] px-2 md:mx-[145px]">
-			<!-- <Title> -->
-			<div class="md:my-[36px]">
-				<h1
-					class="font-bold text-2xl text-[#2E3646] md:font-bold md:text-[32px]">
-					Bagian <span id="module-seq"></span> :
-					<span id="module-name"></span>
-				</h1>
-				<p
-					id="sub-materi"
-					class="text-xs text-slate-700 mt-[8px] md:mt-[32px] md:text-[20px] leading-6"></p>
-			</div>
-			<!-- </Title> -->
-
-			<div class="md:flex md:space-x-[36px]">
-				<div class="md:basis-3/4">
-					<!-- <Materi> -->
-					<div
-						id="materi"
-						class="mt-[34px]"></div>
-					<!-- </Materi> -->
-
-					<!-- <Btn> -->
-					<div class="my-[34px] md:my-[46px] flex justify-between">
-						<button
-							id="prev-content"
-							class="btn btn-secondary">
-							Materi Sebelumnya
-						</button>
-						<button
-							id="next-content"
-							class="btn btn-primary">
-							Materi Selanjutnya
-						</button>
+		<main
+			class="mx-[6px] my-[100px] md:my-[125px] px-2 md:mx-[145px] space-y-8">
+			<h1 class="font-bold text-[24px] md:text-[32px] text-[#2E3646]">
+				Charles Reynolds
+			</h1>
+			<p class="mt-2 text-[12px] md:text-[18px] text-slate-700">
+				charlesreynolds@gmail.com
+			</p>
+			<div>
+				<div class="flex justify-between items-center">
+					<div>
+						<p class="font-medium text-[12px] md:text-[20px] text-[#2E3646]">
+							Fundamental Pemasaran Digital
+						</p>
+						<p class="text-[8px] md:text-[16px] font-light text-[#2E3646]">
+							Part of
+							<span class="bg-[#008d91] text-white px-1 rounded"
+								>Grow Digital</span
+							>
+							<span class="bg-[#008d91] text-white px-1 rounded"
+								>Grow Your Market</span
+							>
+						</p>
 					</div>
-					<!-- </Btn> -->
+					<p class="font-medium text-[12px] md:text-[20px] text-[#FF0000]">
+						Gratis
+					</p>
 				</div>
-				<!-- <ListMateri> -->
-				<div
-					id="list-materi"
-					class="my-[34px] rounded-[10px] border border-slate-300 md:h-fit md:basis-1/4"></div>
-				<!-- </ListMateri> -->
+				<div class="mt-4 flex justify-between">
+					<p class="font-medium text-[12px] md:text-[20px] text-slate-700">
+						Total
+					</p>
+					<p class="font-medium text-[12px] md:text-[20px] text-[#2E3646]">
+						Gratis
+					</p>
+				</div>
+			</div>
+			<div class="mt-4 space-y-1">
+				<input
+					type="text"
+					name="voucher"
+					id="voucher"
+					placeholder="Masukkan Kode Vourcher"
+					class="py-1 md:py-2 px-2 md:px-4 w-full bg-slate-200 font-medium text-[10px] md:text-[18px] text-slate-700 rounded" />
+				<p class="font-light text-[8px] md:text-[16px] text-slate-700">
+					Dengan membeli kelas ini maka sudah menyetujui Ketentuan & Peraturan
+					dari UMKM Grow
+				</p>
+			</div>
+			<div class="flex justify-between">
+				<button
+					id="btn-back"
+					class="btn btn-secondary">
+					Kembali
+				</button>
+				<button
+					id="btn-buy"
+					class="btn btn-primary">
+					Beli Kelas
+				</button>
 			</div>
 		</main>
 		<!-- </Main> -->

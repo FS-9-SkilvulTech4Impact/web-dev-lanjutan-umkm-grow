@@ -158,7 +158,7 @@ prevContent.addEventListener('click', () => {
 
 nextContent.addEventListener('click', () => {
 	if (Number(currentContent.split('-')[1]) >= 9) {
-		return;
+		window.location.href = '../exam-page';
 	}
 
 	numCurrContent = Number(currentContent.split('-')[1]);
@@ -173,4 +173,39 @@ nextContent.addEventListener('click', () => {
 	console.log(currentModule);
 	console.log(currentContent);
 	updateMateri();
+});
+
+const profileNavbar = document.getElementById('profile-navbar');
+const btnNavbar = document.getElementById('btn-navbar');
+const btnDesktopNavbar = document.querySelector('.btn-desktop-navbar');
+const profileDesktopNavbar = document.querySelector('.profile-desktop-navbar');
+const profileOption = document.getElementById('profile-option');
+
+profileDesktopNavbar.addEventListener('click', () => {
+	profileOption.classList.toggle('hidden');
+});
+
+function checkIsLoggedIn() {
+	const isLoggedIn = localStorage.getItem('isUserLoggedIn');
+	if (isLoggedIn) {
+		btnNavbar.classList.add('hidden');
+		profileNavbar.classList.remove('hidden');
+		profileNavbar.classList.add('flex');
+		profileDesktopNavbar.classList.remove('hidden');
+		btnDesktopNavbar.classList.add('hidden');
+	} else {
+		profileNavbar.classList.remove('flex');
+		profileNavbar.classList.add('hidden');
+		btnNavbar.classList.remove('hidden');
+		btnDesktopNavbar.classList.remove('hidden');
+		profileDesktopNavbar.classList.add('hidden');
+	}
+}
+
+checkIsLoggedIn();
+
+const logout = document.getElementById('logout');
+logout.addEventListener('click', () => {
+	localStorage.clear();
+	window.location.href = '';
 });
